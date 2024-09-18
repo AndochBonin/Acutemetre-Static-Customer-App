@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acutemetre</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="py-8 bg-blue-700 mx-auto text-white text-center text-3xl">
+      <h1>My Device</h1>
+    </header>
+    <div class="text-xl ml-8 mt-8">
+      <h1 class="mb-4">Serial #: 11607B</h1>
+      <h1 class="mb-4">Name: Main Oven</h1>
+      <label for="membership">Membership Plan: </label>
+      <select
+        name="membership"
+        id="membership"
+        class="border-[1px] border-black rounded-md h-10 mb-8"
+      >
+        <option value="basic">Basic</option>
+        <option value="premium">Premium</option>
+      </select>
+      <br />
+      <label for="alert" class="mr-4">Send Depletion Alert <br /> When Level Reaches:</label>
+      <input
+        type="number"
+        id="alert"
+        name="alert"
+        min="0"
+        max="100"
+        step="1"
+        placeholder="20%"
+        class="border-[1px] border-black rounded-md h-10 mb-8"
+      />
+    </div>
+
+    <a href="../deviceList.html">
+      <button
+        class="backButton bg-blue-500 hover:bg-blue-700 w-[100px] h-10 rounded-xl fixed bottom-10 left-8"
+      >
+        Back
+      </button>
+    </a>
+  </body>
+</html>

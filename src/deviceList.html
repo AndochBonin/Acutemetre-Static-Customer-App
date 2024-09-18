@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acutemetre</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="py-8 bg-blue-700 mx-auto text-white text-center text-3xl">
+      <h1>My Devices</h1>
+    </header>
+    <div>
+      <table class="w-full text-center text-xl mt-8">
+        <tr class="border-b-[1px] border-black">
+          <th>Serial #</th>
+          <th>Status</th>
+          <th>Plan</th>
+        </tr>
+        <tr class="bg-gray-100 border-b-[1px] border-black" onclick="getIndex(this)">
+          <td>1236AB</td>
+          <td>Active</td>
+          <td>Basic</td>
+        </tr>
+        <tr class="bg-gray-100 border-b-[1px] border-black" onclick="getIndex(this)">
+          <td>FE154</td>
+          <td>Active</td>
+          <td>Premium</td>
+        </tr>
+        <tr class="bg-gray-100 border-b-[1px] border-black" onclick="getIndex(this)">
+          <td>11607B</td>
+          <td>Faulty</td>
+          <td>Basic</td>
+        </tr>
+      </table>
+
+      <div class="w-full flex flex-row justify-center my-4">
+        <button
+          class="deviceStatus bg-blue-500 hover:bg-blue-700 w-[100px] h-10 rounded-xl my-auto mx-2" onclick="openStatus()"
+        >
+          Status
+        </button>
+        <button
+          class="deviceHistory bg-blue-500 hover:bg-blue-700 w-[100px] h-10 rounded-xl my-auto mx-2 " onclick="openHistory()"
+        >
+          History
+        </button>
+        <button
+          class="deviceSettings bg-blue-500 hover:bg-blue-700 w-[100px] h-10 rounded-xl my-auto mx-2" onclick="openSettings()"
+        >
+          Settings
+        </button>
+      </div>
+    </div>
+    <a href="./index.html">
+      <button
+        class="signoutButton bg-blue-500 hover:bg-blue-700 w-[100px] h-10 rounded-xl fixed bottom-10 left-8"
+      >
+        Sign Out
+      </button>
+    </a>
+    <script src="main.js"></script>
+  </body>
+</html>
